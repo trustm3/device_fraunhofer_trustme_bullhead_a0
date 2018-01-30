@@ -27,10 +27,6 @@
 # inherit from bullhead 
 -include device/lge/bullhead/BoardConfig.mk
 
-## set target device to hammerhead instead of trustme_hammerhead
-## otherwise jf-common would not include necessary subdirs in its Android.mk 
-TARGET_DEVICE := bullhead
-
 USE_CAMERA_STUB := true
 
 # we build our kernel outside the tree

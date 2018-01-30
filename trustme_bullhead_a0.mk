@@ -50,10 +50,11 @@ TARGET_PREBUILT_KERNEL := device/fraunhofer/trustme_bullhead_a0/dummy_kernel
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_NAME := trustme_bullhead_a0
-PRODUCT_DEVICE := bullhead
+PRODUCT_DEVICE := trustme_bullhead_a0
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := trust-me Android0 for bullhead
+PRODUCT_MODEL := trustme_bullhead_a0
 PRODUCT_MANUFACTURER := fraunhofer
+TRUSTME_HARDWARE := bullhead
 
 #DEVICE_PACKAGE_OVERLAYS += device/fraunhofer/trustme_bullhead_a0/overlay
 
