@@ -55,11 +55,17 @@ PRODUCT_BRAND := Android
 PRODUCT_MODEL := trustme_bullhead_a0
 PRODUCT_MANUFACTURER := fraunhofer
 TRUSTME_HARDWARE := bullhead
+NANOHUB_SENSORHAL_NAME_OVERRIDE := sensors.$(TRUSTME_HARDWARE)
 
 #DEVICE_PACKAGE_OVERLAYS += device/fraunhofer/trustme_bullhead_a0/overlay
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=adb,rmnet
+    persist.sys.usb.config=adb
+
+# GPS
+PRODUCT_PACKAGES += \
+    libgps.utils \
+    gps.msm8992
 
 # include binary blobs
 $(call inherit-product-if-exists, vendor/lge/bullhead/device-vendor.mk)
